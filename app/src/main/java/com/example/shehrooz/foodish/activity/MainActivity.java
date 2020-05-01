@@ -16,8 +16,16 @@ import android.widget.Adapter;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toolbar;
+import com.example.shehrooz.foodish.*;
+import com.example.shehrooz.foodish.activity.*;
 
-import com.example.shehrooz.foodish.R;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.view.MenuItemCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
+import com.food.fd.*;
 import com.example.shehrooz.foodish.adapters.HorizontalAdapter;
 import com.example.shehrooz.foodish.adapters.VerticalAdapter;
 import com.example.shehrooz.foodish.model.Food;
@@ -44,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main_osh);
 
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
